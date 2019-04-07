@@ -1,0 +1,10 @@
+import Vue from "vue";
+import Mint from 'mint-ui';
+import "mint-ui/lib/style.css";
+import Header from "@/common/header";
+import Swiper from "@/common/swiper";
+import BScroll from "@/common/bScroll";
+Vue.use(Mint);
+Vue.component("Header",Header);
+Vue.component("Swiper",Swiper);
+Vue.component("BScroll",BScroll);
