@@ -4,6 +4,7 @@ import Furn from "./furniture";
 import FurnS from "./furnishing";
 import Art from "./art";
 import Col from "./column";
+import Details from "./furniture/components/details";
 Vue.use(Vuex)
 
 export default new Vuex.Store({
@@ -15,6 +16,6 @@ export default new Vuex.Store({
     FurnS,
     Art,
     Col,
-    
+    Details,
   }
 })

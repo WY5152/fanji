@@ -15,7 +15,6 @@ export default {
     mutations:{
         handleMutationsData(state,params){
             state.nav = params;
-            console.log(state)
         }
     },
     namespaced:true,

@@ -6,7 +6,7 @@
             <ul>
               <a href="##">
                 <li v-for="(item,index) in nav" :key="index"
-                @click="handleClick(index)" 
+                @tap="handleClick(index)" 
                 :class="ClickIndex === index ? 'active':''"
                 >{{item.description}}</li>
               </a>
@@ -23,8 +23,7 @@ import Chair from "./chair";
 export default {
   name: "furniture",
   components:{
-    Chair,
-
+     Chair,
   },
   data(){
       return{
@@ -37,7 +36,7 @@ export default {
   computed: {
     ...Vuex.mapState({
       nav: state => state.Furn.nav
-    })
+    }),
   },
   methods: {
     ...Vuex.mapActions({
@@ -45,8 +44,7 @@ export default {
     }),
     handleClick(index){
       this.ClickIndex = index;
-      
-    }
+    },
   }
 };
 </script>
@@ -78,4 +76,5 @@ export default {
   font-size:.24rem;
   font-weight:bold;
 }
+
 </style>

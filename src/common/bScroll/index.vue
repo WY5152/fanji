@@ -11,9 +11,9 @@ export default {
         this.scroll = new BScroll(this.$refs.wrapper,{
             scrollX:true,
             click:true,
+            tap:true,
         });
-       // console.log(this.scroll);
-    }
+    },
 }
 </script>
 

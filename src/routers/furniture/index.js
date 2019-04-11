@@ -1,8 +1,8 @@
 export default {
-    path :"/furniture",
-    component:()=>import("@/views/furniture"),
-    name:"furniture",
-    meta:{
-        tabBarFlag:true,
-    }
+    path: "/furniture",
+    component: () => import("@/views/furniture"),
+    name: "furniture",
+    meta: {
+        tabBarFlag: true,
+    },  
 }
